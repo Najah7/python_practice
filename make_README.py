@@ -12,6 +12,10 @@ def main():
     
     files = [file.replace('./', '') for file in files]
     
+    for file in files:
+        if file == 'make_README.py':
+          files.remove(file) 
+    
     title = '# Pythonの練習に色ろなモジュールを使ってみた'
     
     with open('README.md', 'w') as file:
