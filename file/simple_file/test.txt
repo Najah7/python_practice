@@ -1,0 +1,2 @@
+test
+output used by print function
