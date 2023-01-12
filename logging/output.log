@@ -1,0 +1,39 @@
+CRITICAL:root:critical
+ERROR:root:error
+WARNING:root:warnig
+INFO:root:info
+DEBUG:root:debug
+WARNING:root:warnig test test
+ERROR:root:error from logger
+CRITICAL:root:critical
+ERROR:root:error
+WARNING:root:warnig
+INFO:root:info
+DEBUG:root:debug
+WARNING:root:warnig test test
+ERROR:logger:error from logger
+CRITICAL:root:critical
+ERROR:root:error
+WARNING:root:warnig
+INFO:root:info
+DEBUG:root:debug
+WARNING:root:warnig test test
+ERROR:logger:error from logger1
+ERROR:root:error from logger2
+CRITICAL:root:critical
+ERROR:root:error
+WARNING:root:warnig
+INFO:root:info
+DEBUG:root:debug
+WARNING:root:warnig test test
+ERROR:logger:error from logger1
+ERROR:root:error from logger2
+CRITICAL:root:critical
+ERROR:root:error
+WARNING:root:warnig
+INFO:root:info
+DEBUG:root:debug
+WARNING:root:warnig test test
+ERROR:logger:error from logger1
+ERROR:root:error from logger2
+ERROR:logger:error with passwor
