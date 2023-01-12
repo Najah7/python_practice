@@ -1,4 +1,4 @@
-# Pythonの練習に色ろなモジュールを使ってみた
+# Pythonの練習に様々なモジュールを使ってみた
 - text_to_html：text_to_html関係のモジュールを使ってみた
 - logging：logging関係のモジュールを使ってみた
 - config：config関係のモジュールを使ってみた
