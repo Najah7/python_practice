@@ -12,9 +12,12 @@ def main():
     
     files = [file.replace('./', '') for file in files]
     
+    exclude_files = ['make_README.py', 'text_to_html', 'draw_image']
+    
     for file in files:
-        if file == 'make_README.py':
-          files.remove(file) 
+        for ex_file in exclude_files:
+            if file == ex_file:
+                files.remove(file) 
     
     title = '# Pythonの練習に色ろなモジュールを使ってみた'
     
