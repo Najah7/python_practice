@@ -4,27 +4,38 @@ from glob import glob
 
 def main():
     
-    try:
-        os.remove('README.md')
-    except: pass
+    # try:
+    #     os.remove('README.md')
+    # except: pass
     
-    files =glob(f'{Path(__file__).parent}/*')
+    files = os.listdir()
     
-    files = [file.replace('./', '') for file in files]
+    # print(files)
     
-    exclude_files = ['make_README.py', 'text_to_html', 'draw_image']
+    dirs = list()
     
     for file in files:
-        for ex_file in exclude_files:
-            if file == ex_file:
-                files.remove(file) 
+        if os.path.isdir(file):
+            dirs.append(file) 
+    
+    exclude_dirs = [
+        '.git',
+        'text_to_html',
+        'draw_image',
+    ]
+
+    for ex_dir in exclude_dirs:
+        if ex_dir in dirs:
+            dirs.remove(ex_dir) 
+    
+    print(dirs)
     
     title = '# Pythonの練習に色ろなモジュールを使ってみた'
     
     with open('README.md', 'w') as file:
         file.write(title+ '\n')
-        for i in range(len(files)):
-            file.write(f'- {files[i]}：{files[i]}関係のモジュールを使ってみた\n')
+        for i in range(len(dirs)):
+            file.write(f'- {dirs[i]}：{dirs[i]}関係のモジュールを使ってみた\n')
     
 
 
